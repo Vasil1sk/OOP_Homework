@@ -20,7 +20,7 @@ class Student:
     def mid_grade(self):
         for grade in self.grades.values():
             res = sum(grade) / len(grade)
-        return res
+            return res
 
     def __str__(self):
         res = f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за домашние задания: {self.mid_grade()}\nКурсы в процессе изучения: {", ".join(self.courses_in_progress)}\nЗавершенные курсы {", ".join(self.finished_courses)}'
