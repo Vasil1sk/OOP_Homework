@@ -42,7 +42,7 @@ class Lecturer(Mentor):
         # return list(res) вроде всё работает, но как распаковать список - не понимаю, может, подскажете?
         for grade in self.grades.values():
             res = sum(grade) / len(grade)
-            return res
+        return res
 
     def __str__(self):
         res = f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {self.mid_grade()}'
@@ -119,10 +119,6 @@ hermione_granger.rate_lector(steven_strange, 'Python', 8)
 ron_weasley.rate_lector(tony_stark, 'Python', 10)
 ron_weasley.rate_lector(tony_stark, 'Python', 9)
 
-print(hermione_granger.grades)
-print(ron_weasley.grades)
-print(steven_strange.grades)
-print(tony_stark.grades)
 print(hermione_granger)
 print(ron_weasley)
 print(steven_strange)
